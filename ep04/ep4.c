@@ -5,14 +5,24 @@
 int main(int argc, char ** argv)
 {
 	
-	scanf()
+	FILE * filetxt;
+
+	filetxt = fopen(argv[1], "r");
+
+	if (fgets(texto, filetxt)==NULL)
+		printf("\nerror reading file\n");
 
 }
 
-int v_desordenado()
+int v_desordenado(char ** texto)
 {
 	char ** v;
-	int i, j;
+	int i=0, j;
+	
+	while (texto[i]!= EOF)
+	{
+			
+	}
 
 
 
