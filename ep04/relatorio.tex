@@ -1,0 +1,29 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+%If you want to title your bold things something different just make another thing exactly like this but replace "problem" with the name of the thing you want, like theorem or lemma or whatever
+ 
+\begin{document}
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+%Good resources for looking up how to do stuff:
+%Binary operators: http://www.access2science.com/latex/Binary.html
+%General help: http://en.wikibooks.org/wiki/LaTeX/Mathematics
+%Or just google stuff
+ 
+\title{EP4 - MAC0121}
+\author{Bruna Bazaluk M. Videira \\ 9797002}
+\maketitle
+ 
+Infelizmente, meu EP funciona somente com os parametros AB A, VD A e VD O. Os outros parametros foram implementados, mas nao consegui evitar os erros \textit{seg fault}.
+A analise que consegui fazer foi comparando a AB e o VD, e a AB eh muito mais veloz que os vetores, e de acordo com meus colegas de sala que conseguiram fazer as outras estruturas rodarem, as listas sao as mais lentas.
+
+Na verdade, funcionava com AB A mas quando fui tentar resolver um pequeno problema (ele imprimia uma linha vazia antes das listas de palavras), o gcc imprimiu um erro que eu nao soube resolver...
+
+\end{document}
